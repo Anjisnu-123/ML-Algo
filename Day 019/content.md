@@ -104,6 +104,40 @@ combating underfitting : Increase model complexity,feature enginerring,decrease 
 |                             | - Shapiro-Wilk Test (for log-normality)          |
 
 
+# Regularization Technique in ML :
+Defination,need for regularization,which and where to apply regularization
+
+Avaialble regularization technique : L1 regularization(Lasso): Defination,mathematical derivation,effect,assumptions,use when you feel there exist some irrelevant column,L2 regularization (Ridge) : Defination,mathemathical derivation,effect,assumptions
+
+Elastic net regularization : defination,mathematical derivation,effect
+group lasso : defination,mathematical foormulation,effect.
+Sparse group lasso : Defination,mathematical formulation ,effect.
+
+**OPTIMIZATION :**
+Gradient descent ; What is gradient descent?,Mathematical defination of gradient descent,steps in gradient descent(initialize the parameters,calculate gradient,updating parameters,converegence check):-> show all steps with example code
+need for this hradient descent algorithm: FInding optimal parameter (OLS,GLS,Polynoial regression),Scalability of large datasets,flexibility, Handling complex loss functions,convergence control,implemnting regularization techniques
+
+Variants of gradient descent: Batch gradient descent (defination,pros,cons,update rule),Stochastic gradient descent (SGD),Mini batch gradient descent (Defination,pros,cons,updated rule)
+
+Learning rate and it simpact ; too small,Too large,optimal rate
+
+convergence criteria : Cost function value,parameter change , maximum iterations
+
+Stochastic gradient descent(SGD) : Defination ,Mathematical concept, steps,adbantage,disadvantage
+
+Mini batch gradient descent : Defination ,Mathematical concept, steps,adbantage,disadvantage
+
+Conjugate gradient method : Defination,Steps,Use cases,Advantages, disadvantages.
+
+
+Quasi newtons methods (BFGS) : Defination,Steps,Use cases,Advantages, disadvantages.
+> [!IMPORTANT]
+> More used in deep neural network (Depth should be more than 10)
+
+
+
+
+
 > [!NOTE]
 > Ramsey reset test
 
