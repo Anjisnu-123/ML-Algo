@@ -34,8 +34,31 @@ This document provides a comparison between Ordinary Least Squares (OLS) and Gen
 Modle evaluation : R2 : Defination,Formula,Interpretation |,Adjusted R2: defination,formula,Interpretation |, F statistics : Defination ,formula,interpretation |, Residual analysis : Purpose,methods: Residuals plots,Histogram of residuals,Q-Q plots,mean squared errors/Root mean sq error : (defination,formula,interpretation) |, AIC/BIC : Defination,Formulas:Aic,BIC,interpretation |. 
 
 
+**Polynomial regression :** Defination of multivariate polynomial regression,mathematical formulation, assumptions of multivariate polynomial regression : (linearity in parameters,independence of errors,homoscedasticity,normality of residuals,no perfect multicolienarity),when to use multivraiate polynomial regression,parameter estimation in multivariate polynomial regression(step by step calc: define the objective function,partial dervatives,set derivatives to zero,solve),interpretation of coefficients
+
+
+
+
 
 Verifying assumptions of multiple linear regression : Linearity , How to check ,mathematical approach |, Independence :  defination,How to check ,formula |,Homscedasticity : Defination,How to check,formula | Normality in residuals : defination,how to check,formula |, No perfect multicolinearity: defination,how to check:(vif),formula of VIF,interpretation.
+
+
+
+## Overfitting and underfitting : 
+
+what is overfitting,characteristics of overfitting ,why overfitting , example.
+
+what is undertaking,charateristics of under fitting,why underfitting happens,example
+
+## Bias varriance Trade-off
+Bias:HIgh bias,Varriance: defination,explaination,high variance,
+## the bias varriance trade off: 
+combating overfitting: regularization,cross validation,reduce model complexity,more data early stopping
+combating underfitting : Increase model complexity,feature enginerring,decrease regularization
+
+
+
+
 
 > [!NOTE]
 > Ramsey reset test
