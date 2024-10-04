@@ -57,6 +57,31 @@ combating overfitting: regularization,cross validation,reduce model complexity,m
 combating underfitting : Increase model complexity,feature enginerring,decrease regularization
 
 
+| Test                     | Assumptions Checked                                            |
+|--------------------------|---------------------------------------------------------------|
+| **t-test**               | - Normally distributed populations                             |
+|                          | - Homogeneity of variances (for independent t-test)           |
+|                          | - Independent samples (for independent t-test)               |
+| **ANOVA**                | - Normally distributed populations                             |
+|                          | - Homogeneity of variances                                    |
+|                          | - Independent samples                                         |
+| **Chi-Square Test**      | - Observations are independent                                 |
+|                          | - Categorical data                                           |
+|                          | - Expected frequency in each category is at least 5          |
+| **Pearson Correlation**   | - Linear relationship between variables                       |
+|                          | - Normally distributed variables                              |
+| **Spearman's Rank Correlation** | - Monotonic relationship between variables              |
+|                          | - Ordinal or continuous data                                 |
+| **Regression Analysis**   | - Linearity of relationships                                   |
+|                          | - Independence of errors                                     |
+|                          | - Homoscedasticity (constant variance of errors)            |
+|                          | - Normality of errors                                        |
+| **Mann-Whitney U Test**   | - Independent samples                                         |
+|                          | - Ordinal or continuous data                                 |
+| **Kruskal-Wallis Test**   | - Independent samples                                         |
+|                          | - Ordinal or continuous data                                 |
+| **Shapiro-Wilk Test**     | - Normality of data distribution                             |
+| **Levene's Test**         | - Homogeneity of variances                                   |
 
 
 
