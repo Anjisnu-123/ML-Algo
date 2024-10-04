@@ -87,3 +87,4 @@ combating underfitting : Increase model complexity,feature enginerring,decrease 
 
 > [!NOTE]
 > Ramsey reset test
+> Logging in python
