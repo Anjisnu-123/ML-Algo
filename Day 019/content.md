@@ -132,9 +132,9 @@ Conjugate gradient method : Defination,Steps,Use cases,Advantages, disadvantages
 
 Quasi newtons methods (BFGS) : Defination,Steps,Use cases,Advantages, disadvantages.
 > [!IMPORTANT]
-> More used in deep neural network (Depth should be more than 10)
+> BFGS More used in deep neural network (Depth should be more than 10)
 
-
+Levenberg marquardt algorithm (LM),L-BFGS
 
 
 
