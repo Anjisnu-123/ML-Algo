@@ -31,4 +31,10 @@ This document provides a comparison between Ordinary Least Squares (OLS) and Gen
 | Estimation Complexity         | Simpler and faster to compute                                        | More complex, requires estimating the covariance matrix         |
 
 
+Modle evaluation : R2 : Defination,Formula,Interpretation |,Adjusted R2: defination,formula,Interpretation |, F statistics : Defination ,formula,interpretation |, Residual analysis : Purpose,methods: Residuals plots,Histogram of residuals,Q-Q plots,mean squared errors/Root mean sq error : (defination,formula,interpretation) |, AIC/BIC : Defination,Formulas:Aic,BIC,interpretation |. 
 
+
+Verifying assumptions of multiple linear regression : Linearity , How to check ,mathematical approach |, Independence :  defination,How to check ,formula |,Homscedasticity : Defination,How to check,formula | Normality in residuals : defination,how to check,formula |, No perfect multicolinearity: defination,how to check:(vif),formula of VIF,interpretation.
+
+> [!NOTE]
+> Ramsey reset test
