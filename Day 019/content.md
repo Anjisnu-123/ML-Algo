@@ -83,6 +83,25 @@ combating underfitting : Increase model complexity,feature enginerring,decrease 
 | **Shapiro-Wilk Test**     | - Normality of data distribution                             |
 | **Levene's Test**         | - Homogeneity of variances                                   |
 
+| Distribution                | Associated Test                                   |
+|-----------------------------|---------------------------------------------------|
+| **Normal Distribution**     | - t-test                                         |
+|                             | - ANOVA                                          |
+|                             | - Pearson Correlation                             |
+|                             | - Linear Regression                               |
+|                             | - Shapiro-Wilk Test (for normality)             |
+|                             | - Kolmogorov-Smirnov Test (for normality)       |
+| **Binomial Distribution**   | - Chi-Square Test (Goodness of Fit)             |
+|                             | - Binomial Test                                   |
+|                             | - Fisher's Exact Test                            |
+| **Poisson Distribution**    | - Poisson Test (Goodness of Fit)                 |
+|                             | - Chi-Square Test (for count data)               |
+| **Exponential Distribution**| - Kolmogorov-Smirnov Test (for exponentiality)  |
+|                             | - Anderson-Darling Test (for exponentiality)     |
+| **Uniform Distribution**    | - Chi-Square Test (Goodness of Fit)              |
+| **Geometric Distribution**  | - Chi-Square Test (Goodness of Fit)              |
+| **Log-Normal Distribution** | - Kolmogorov-Smirnov Test (for log-normality)    |
+|                             | - Shapiro-Wilk Test (for log-normality)          |
 
 
 > [!NOTE]
