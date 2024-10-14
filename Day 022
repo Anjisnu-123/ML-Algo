@@ -1,0 +1,17 @@
+
+
+Linear support vector machines (SVM)
+
+Used for classification tasks. They work by finding the optimal hyperplane that separates different classes in the feature space. 
+
+wT*x +b=0
+
+The margin is defined as the distance between the decision boundary (hyperplane) and the nearest data points from either class. 
+
+importance : maximizing the margin and robustness to noise
+
+Objective function, optimization process, regularization, statistica interpretation, evaluation metrics
+
+
+when to choose linear SVM : margin and decision boundary: (svm,logostic regression),Nature of data : (svm,logostic regression),underlying mathematical basis :(svm,logostic regression),overfitting and regularization : (svm,logostic regression), interpretibility : (svm,logostic regression),performance with imbalanced data: (svm,logostic regression).
+ 
