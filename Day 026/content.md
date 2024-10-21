@@ -48,8 +48,8 @@ defination,Assumptions: data represented in metric space,homogenity of initial c
 
 
 
-[!Note]
-model selection will be performed on training and val will be there as testing data,after model is selected then train+val combiningly will be trianing data and test will be test data
+> [!IMPORTANT] 
+> model selection will be performed on training and val will be there as testing data,after model is selected then train+val combiningly will be trianing data and test will be test data
 
 
 
