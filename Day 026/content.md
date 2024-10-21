@@ -31,14 +31,20 @@ example,intution/visualization,comparison,evaluation metrics,complexity,real wor
 
 defination,assumptions,mathematical formulation,how to use: set the number of clusters k,initialize medoids by selecting k random data points,assign points to the nearest medoid,swap medoid with other points to reduce cost,continue until convergence,When to use,pros and cons,usecase,example,intution/visualization,comparison(vs kmeans,hierarchchial clustering,dbscan),Evaluation metrics(sillhouettee score,dunn index,davies-bouldin index),complexity,Real world challenges,python implementation,Variants and extensions(CLARA,CLARANS),limitations in real world applications
 
-### Aglomerative clustering
-defination,Assumptions: data represented in metric space,distance metric, Mathematical formulation : single linkage,complete linkage,avg linkage,ward's linkage,Algorithm steps: initialization,distance metric,merge clusters,repeat,How to use : step 1.. step 4,When to use,pros and cons
+### Aglomerative clustering : botttom up approach
+defination,Assumptions: data represented in metric space,distance metric, Mathematical formulation : single linkage,complete linkage,avg linkage,ward's linkage,Algorithm steps: initialization,distance metric,merge clusters,repeat,How to use : step 1.. step 4,When to use,pros and cons,Use cases ,example.intution/visualization,variance and extensions: BIRCH,hdbscan,Limitations in real world applications
 
+## Divisive clustering : top down approach of hiearchical clustering
 
+defination,Assumptions:, Mathematical formulation,Algorithm steps: ,How to use : step 1.. step 4,When to use,pros and cons,Use cases ,example.intution/visualization,variance and extensions: recursive bisection,spectral clustering,Limitations in real world applications
 
+## DBSCAN
 
+defination,Assumptions, Mathematical formulation,Algorithm steps: ,How to use : step 1.. step 5,When to use,pros and cons,Use cases: Astronomy,geospatial data,example.intution/visualization,variance and extensions: HDBscan,optics,Limitations in real world applications
 
+## OPTICS
 
+defination,Assumptions: data represented in metric space,homogenity of initial clusters, Mathematical formulation: core concept-> core distance rechability dist cluster ordering,Algorithm steps: ,How to use : step 1.. step 5,When to use,pros and cons,Use cases: geographical information system,customer segmentation,example,parameters,intution/visualization,variance and extensions: HDBscan,DeLl-clu,Limitations in real world applications 
 
 
 
@@ -200,8 +206,6 @@ Understanding the time and space complexity of unsupervised learning algorithms 
 - **Space Complexity**: Involves the amount of memory required for storing data points, clusters, and additional structures.
 
 ---
-
-Feel free to modify this README to suit your specific project needs!
 
 
 ## Key Metrics for Clustering
