@@ -52,6 +52,25 @@ defination,Assumptions: data represented in metric space,homogenity of initial c
 > model selection will be performed on training and val will be there as testing data,after model is selected then train+val combiningly will be trianing data and test will be test data
 
 
+## GMM
+Defination:problem solved,Assumptions:gausiaan dist,independence,overalapping clusters,Mathematical formulation,expectation maximization(EM) algorithm for parameter estimation: initialization,e-step(estimation),m-step(maximization),convergence: Repeat e-step and m-step untill convergence,HOw to use,when to use,Pros and cons,use case,example,intution/visualization,comparisons,evaluation metrics,complexity,Real world challenges,code,Variants and extension : variational GMM,Bayesian GMM,Limitations in real world applications
+
+## Fuzzy c-means clustering
+Defination,assumptions,Mathematical formulation: model defination,update rules,How to use: step 1...4,when to use,pros and cons,usecases,example,intution/visualization,compariosn,evaluation metrics:fuzzy partition coefficient,fuzzy silhhhoutte coeff,cluster validity index,complexity,real world challenges,implementation,variants and extension: Adaptive fuzzy c-means,kernel based fuzzy c means,limitations in real world application.
+
+
+## Graph based clustering
+Key concepts: graph representation,adjacency matrix,connected components,Applications: social networks,biological networks.
+
+**Spectral clustering :** defination,Assumptions:, Mathematical formulation,Algorithm steps: ,How to use : step 1.. step 4,When to use,pros and cons,Use cases ,example.intution/visualization,variance and extensions: recursive bisection,spectral clustering,Limitations in real world applications
+
+**Affinity propagaton :**defination,Assumptions:, Mathematical formulation,Algorithm steps: ,How to use : step 1.. step 4,When to use,pros and cons,Use cases ,example.intution/visualization,variance and extensions: recursive bisection,spectral clustering,Limitations in real world applications
+
+
+
+
+
+
 
 
 # Unsupervised Learning: A Comprehensive Overview
