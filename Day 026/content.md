@@ -24,5 +24,11 @@ Clustering algoriths:  partition based clustering: ke means,k medoids(PAM),hiera
 
 
 ### Kmeans clustering
-Defination,asssumptions,mathematical formulation,algorithm steops
+
+Defination,asssumptions,mathematical formulation,algorithm steops,how to use: all steps,when to use:EDA,market segmentation,image compression,data reduction,pros and cons,USecase,
+example,intution/visualization,comparison,evaluation metrics,complexity,real world challenges,software implementation,variants and extension(k means++,mini batch k means),limitations in real world applications
+
+### K-medoids (PAM)
+
+defination,assumptions,mathematical formulation,how to use: set the number of clusters k,initialize medoids by selecting k random data points,assign points to the nearest medoid,swap medoid with other points to reduce cost,continue until convergence,When to use,pros and cons,usecase,example,intution/visualization,comparison(vs kmeans,hierarchchial clustering,dbscan),Evaluation metrics(sillhouettee score,dunn index,davies-bouldin index),complexity,Real world challenges,python implementation,Variants and extensions(CLARA,CLARANS),limitations in real world applications
 
