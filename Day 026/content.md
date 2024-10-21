@@ -48,7 +48,8 @@ defination,Assumptions: data represented in metric space,homogenity of initial c
 
 
 
-
+[!Note]
+model selection will be performed on training and val will be there as testing data,after model is selected then train+val combiningly will be trianing data and test will be test data
 
 
 
@@ -69,6 +70,7 @@ defination,Assumptions: data represented in metric space,homogenity of initial c
 11. [Time and Space Complexity](#time-and-space-complexity)
 
 ---
+
 
 ## Introduction to Unsupervised Learning
 
