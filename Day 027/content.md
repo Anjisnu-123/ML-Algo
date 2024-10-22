@@ -17,3 +17,12 @@ varriants and extensions,limitations in real world apllications
 
 SVD: Defination,assumptions,mathematical formulation,how to use,when to use,pros and cons,USe CASE,Example,intution and visualization,comparison,svd vs eigen values,Evaluation metrics,
 complexity,Real world challenges,software implimentation,variants and extension: truncated svd,incremental svd,limitations in real world challenges,
+
+t-distributed stochastic neighbour embedding(tsne): Defination,Assumptions,mathematical formulation: affinity calculation,symmetrization,low dimensional representation,cost function,gradient dscent |,how to use,where to use,pros and cons,use case,steps to followed for tsne calc: step1: calculate pairwise affinities,symmetrize the probabilities,initialize low dimensional points,iteratively optimize.,intuition/visualization,comparison with other technique,evaluation metrics,complexity analysis,real world challenges software implementation,variants and extension,limitations in real world applications
+
+
+uniform manifold approximation and projection (UMAP) : Defination,assumption,mathematical formulation : constructing the high dimensional affinity graph,symmetrizing the affinites,
+construct the low dimensional affinity graph .....,How to use,when to use,pros and cons,use case,numerical example work thorugh step by step,intution/visualization,comparison: umap vs tsne,umap vs pca,evaluation metrics,complexity,real world challeges,software implementation,variants and extension,limitations in real world applications.
+
+Isomap : Defination,Assumptions,mathematical formulation: constructing the neighbourhood graph,finding the nearest neighbour,computing geodesic distance,centering the distance metric,
+eigen values decomposistion, embedding,how to use,when to use,pros and cons,usecases,intution/visualization,comparison,evaluation metrics,complexity,real world challenges,software implementations,variants and extensions
