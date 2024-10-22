@@ -26,3 +26,8 @@ construct the low dimensional affinity graph .....,How to use,when to use,pros a
 
 Isomap : Defination,Assumptions,mathematical formulation: constructing the neighbourhood graph,finding the nearest neighbour,computing geodesic distance,centering the distance metric,
 eigen values decomposistion, embedding,how to use,when to use,pros and cons,usecases,intution/visualization,comparison,evaluation metrics,complexity,real world challenges,software implementations,variants and extensions
+
+Local linear embedding : Defination,assumptions,mathematical formulation,constructing the neighbourhood graph,weight calculation,constructing the weight matrix,compute the low dimensional representation,compute the eigen values problemshow to use,when to use,pros and cons,use case,example:numerical example work through step by step,intution/visualization,comparison,evaluation metrics,complexity,real world challenges.
+software implementation,varriants and extension,limitations in real world applications
+
+Multi dimesnional scaling : Defination,assumptions,mathematical formulation,how to use,when to use,pros and cons,numerical exaple walk through step by step,use case,example,intution/visualization,comparison,evaluation metrics,complexity,real world challenges.
