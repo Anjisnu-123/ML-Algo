@@ -22,4 +22,21 @@ and extensions : weighted lof,fast lof,loci,limitations in real world applicatio
  variants and extensions,limitations in real world challenges
 
 
- # Association rule mining
+ # Association rule mining :
+ Introduction to association rule mining : what is association rule mining,why is it needed,when to use it,how much does it help in unsupervised learning
+ common evaluation metrics for association rule mining: support,confidence,lift,leverage,conviction,formula ,interpretation
+
+
+
+
+ Association rule mining : apriori algo,eclat algo,fp growth
+
+## Apriori algo : **Used for market basket analysis**. defination,assumptions,mathematical formulation : key concept : transaction database,itemset,support,confidence,lift,algorithm steps,steps 2: generate association rules,how to use,when to use,pros and cons,use case,example,comparison,evaluation metrics,complexity,limitstions,optimization,applications,variants
+
+## Eclat algorithm
+Defination,assumptions: binary transaction,vertical layout,frequent itemsets,mathematical  formula,algorithm steps,when to use ,how to use,pros and cons,mathematical example,comparison,
+evaluation metrics,complexity,limitations,real world challenges,software implementation,use cases
+
+## Fp growth
+
+Defination,problem solved,Assumptions: binary transactions,minimum suport threshould,mathematical formulation
