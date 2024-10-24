@@ -24,6 +24,16 @@ example: numerical example,adaption of neural gas algorithm using minisom librar
 Introduction to topic modeling algorithm,need for topic modeling,when to use topic modeling,key concepts in topic modeling,use cases in industry
 key concept in topic modeling : (Latent variables,bag of words) : Description,examples
 Probabilistic models: 
+Documen topic matrix: description,example,Topic word matrix : Description,example
 
-The background color is `#ffffff` for light mode and `#000000` for dark mode.
+Metrics for topic modeling : (Perplexity,coherence score,ARI,sillhoute score,Topic coverage,Normalized pointwise mutual information) : Description,calculation,interpretation
 
+## Topic modeling algorithms: latent dirichlet ,non negative matrix factorixation,latent semantic analysis
+Latent dirichlet allocation(LDA): Defination,assumptions: bag of words,document topic distributioon,Topic word dist |,mathematical formulation , How to use it : data prp,initialization<,training,output | when to use,pros and cons,usecase: applications,intution/visualization,comparison,evaluation metric,complexity,Real world challenges,varriants and extensions,limitations in real world applications
+
+##  Non negative matrix factorization  : 
+Defination,assuptions: non negativity,dimesionality reduction,when to use,how to use,NMF calculation: using code also,intution/visualization,comparison,evaluation metrics,cmplexity,real world challenges,software implementation,variants and extension,limitations in real world application.
+
+
+## LSA :
+defination,assumptions : term document matrix,latent structure,dimensionality reduction,mathematical formulation,how to use,when to use,pros and cons,use cases,intution/visualization,comparison,evaluation metrics,complexity real world challenges,software impleentation,variants and extension,limtations in real world
