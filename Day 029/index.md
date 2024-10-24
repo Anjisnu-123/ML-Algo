@@ -21,3 +21,9 @@ example: numerical example,adaption of neural gas algorithm using minisom librar
 
 
 # Decoding textual data
+Introduction to topic modeling algorithm,need for topic modeling,when to use topic modeling,key concepts in topic modeling,use cases in industry
+key concept in topic modeling : (Latent variables,bag of words) : Description,examples
+Probabilistic models: 
+
+The background color is `#ffffff` for light mode and `#000000` for dark mode.
+
