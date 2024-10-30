@@ -104,84 +104,212 @@ Dimensionality reduction is a technique to reduce the number of input variables 
 
 ---
 
-### **4.1 Principal Component Analysis (PCA)**
 
-#### Definition:
-PCA is a linear technique that projects data onto a lower-dimensional space while maximizing variance. 
+## **4.1 Principal Component Analysis (PCA)**
 
-#### Assumptions:
-- Data should be standardized.
-- Linearly correlated features.
-- Gaussian distribution improves performance.
+### **Definition:**  
+PCA is a **linear dimensionality reduction technique** that projects high-dimensional data onto a lower-dimensional space in such a way that **maximum variance** in the data is retained. The new dimensions (principal components) are orthogonal to each other, ensuring that they do not overlap in the variance they explain.
 
-#### Mathematical Formulation:
-1. **Data Standardization:** Center the data by subtracting the mean.
+---
+
+### **Assumptions:**  
+- **Standardization:** PCA assumes that the features have been standardized (mean = 0, standard deviation = 1).  
+- **Linearity:** PCA only captures linear correlations among variables.  
+- **Gaussian Distribution:** While not mandatory, Gaussian-distributed data tends to perform better with PCA.
+
+---
+
+### **Mathematical Formulation:**  
+1. **Data Standardization:**  
+   - Subtract the mean from each feature to center the data around 0.
+     \[ X_{\text{centered}} = X - \text{mean}(X) \]
+
 2. **Covariance Matrix Computation:**  
-   \[ \text{Cov}(X) = \frac{1}{n-1} X^T X \]
-3. **Eigenvalue and Eigenvector Decomposition:** Identify principal components.
-4. **Selecting Principal Components:** Choose components explaining most variance.
+   - Compute the covariance matrix to understand how variables vary together.
+     \[ \text{Cov}(X) = \frac{1}{n-1} X^T X \]
+
+3. **Eigenvalue and Eigenvector Decomposition:**  
+   - Solve for eigenvalues and eigenvectors of the covariance matrix.  
+     - **Eigenvalues** indicate the amount of variance captured by each component.
+     - **Eigenvectors** represent the direction of the new axes.
+
+4. **Select Principal Components:**  
+   - Sort eigenvalues in descending order and select the top `k` eigenvectors corresponding to the largest eigenvalues (those that explain the most variance).
+
+5. **Project Data onto Principal Components:**  
+   \[ X' = X W \quad \text{where W is the matrix of top k eigenvectors.} \]  
+
+---
+
+### **Pros and Cons:**
+- **Pros:**  
+  - Fast and efficient.
+  - Reduces overfitting by eliminating redundant features.
+  - Useful for **visualization** in 2D/3D.
+
+- **Cons:**  
+  - Captures only **linear relationships**.
+  - PCA is sensitive to the **scale** of features (hence standardization is necessary).
+  - Difficult to interpret individual components in some cases.
+
+---
+
+### **Use Case:**  
+- **Face Recognition (Eigenfaces Technique):**  
+  PCA is used to reduce the dimensionality of large datasets of facial images, identifying the key components (eigenfaces) that distinguish between different individuals.
+
+---
+
+---
+
+## **4.2 Linear Discriminant Analysis (LDA)**
+
+### **Definition:**  
+LDA is a **supervised dimensionality reduction technique** that maximizes the separation between multiple classes. It aims to find the linear combinations of features that best separate two or more classes. Unlike PCA, which maximizes variance, LDA focuses on maximizing class separability.
+
+---
+
+### **Mathematical Formulation:**
+1. **Compute Class Means:**  
+   Calculate the mean vector for each class \( \mu_k \) and the overall mean \( \mu \).
+
+2. **Within-Class Scatter Matrix (S_w):**  
+   \[
+   S_w = \sum_{k=1}^{K} \sum_{x_i \in C_k} (x_i - \mu_k)(x_i - \mu_k)^T
+   \]
+   Measures the spread of points within each class.
+
+3. **Between-Class Scatter Matrix (S_b):**  
+   \[
+   S_b = \sum_{k=1}^{K} n_k (\mu_k - \mu)(\mu_k - \mu)^T
+   \]
+   Measures the separation between different classes.
+
+4. **Eigenvalue Problem:**  
+   Solve the generalized eigenvalue problem:  
+   \[
+   S_w^{-1} S_b = \lambda v
+   \]  
+   The eigenvectors corresponding to the largest eigenvalues form the new basis for projection.
+
 5. **Project Data:**  
-   \[ X' = X W \quad (\text{where W = eigenvectors}) \]
-
-#### Pros and Cons:
-- **Pros:** Simple, fast, widely used.
-- **Cons:** Only captures linear relationships.
-
-#### Use Case:
-- Face recognition (Eigenfaces technique).
+   - Transform the data using the top eigenvectors to obtain a new lower-dimensional representation.
 
 ---
 
-### **4.2 Linear Discriminant Analysis (LDA)**
+### **Pros and Cons:**
+- **Pros:**  
+  - Works well for **classification tasks** by maximizing class separability.  
+  - Reduces the risk of **overfitting** when applied to high-dimensional datasets.
 
-#### Definition:
-LDA reduces dimensionality by maximizing the separation between multiple classes.
-
-#### Mathematical Formulation:
-1. **Compute Class Means:** Mean vectors for each class.
-2. **Within-Class Scatter Matrix:** Measures the spread within each class.
-3. **Between-Class Scatter Matrix:** Measures separation between classes.
-4. **Eigenvalue Problem:** Solve for discriminants.
-5. **Project Data:** Map to new subspace.
-
-#### Use Case:
-- Handwriting recognition.
+- **Cons:**  
+  - Assumes that data is **normally distributed** and that all classes have the same covariance.  
+  - Ineffective with **non-linearly separable** data.
 
 ---
 
-### **4.3 Singular Value Decomposition (SVD)**
-
-#### Definition:
-SVD decomposes a matrix into three components (U, Σ, V). It is often used in text analysis and matrix factorization.
-
-#### Formulation:
-\[ A = U \Sigma V^T \]
-
-#### Variants:
-- Truncated SVD
-- Incremental SVD
+### **Use Case:**  
+- **Handwriting Recognition:**  
+  LDA can reduce dimensionality while retaining the class structure, making it effective for recognizing different handwriting styles.
 
 ---
 
-### **4.4 t-Distributed Stochastic Neighbor Embedding (t-SNE)**
+---
 
-#### Definition:
-t-SNE is a nonlinear technique that maps high-dimensional data to two or three dimensions.
+## **4.3 Singular Value Decomposition (SVD)**
 
-#### Steps:
-1. **Affinity Calculation:** Pairwise similarities.
-2. **Symmetrize:** Normalize probabilities.
-3. **Initialize Low-Dimensional Points:** Randomly initialize.
-4. **Optimize:** Using gradient descent.
-
-#### Use Case:
-- Visualizing word embeddings.
+### **Definition:**  
+SVD is a **matrix factorization technique** that decomposes a matrix into three matrices. It’s commonly used in **dimensionality reduction**, **data compression**, and **latent semantic analysis** for text data. SVD captures the most important information in the data while reducing noise.
 
 ---
 
-Below is the expanded and more detailed section on **UMAP, Isomap, LLE, and MDS**:
+### **Mathematical Formulation:**  
+Given a matrix \( A \) with dimensions \( m \times n \), SVD decomposes it into three matrices:
+\[
+A = U \Sigma V^T
+\]
+- \( U \): Left singular vectors (\( m \times r \)).  
+- \( \Sigma \): Diagonal matrix of singular values (\( r \times r \)).  
+- \( V^T \): Right singular vectors (\( r \times n \)).
 
 ---
+
+### **Variants of SVD:**
+- **Truncated SVD:** Keeps only the top `k` singular values for dimensionality reduction.  
+- **Incremental SVD:** Used for streaming data or large datasets that cannot fit in memory.
+
+---
+
+### **Pros and Cons:**
+- **Pros:**  
+  - Useful for **text analysis** (e.g., latent semantic analysis).  
+  - Captures **latent structures** in data.  
+  - Effective for **data compression**.
+
+- **Cons:**  
+  - Computationally expensive for very large matrices.  
+  - May lose meaningful information if truncated too aggressively.
+
+---
+
+### **Use Case:**  
+- **Recommender Systems:**  
+  SVD is used to factorize user-item matrices in collaborative filtering for personalized recommendations.
+
+---
+
+---
+
+## **4.4 t-Distributed Stochastic Neighbor Embedding (t-SNE)**
+
+### **Definition:**  
+t-SNE is a **nonlinear dimensionality reduction technique** that maps high-dimensional data to a lower-dimensional space (usually 2D or 3D). It focuses on preserving **local relationships** between data points, making it excellent for **visualization of clusters**.
+
+---
+
+### **Mathematical Formulation:**  
+1. **Calculate Pairwise Affinities in High-Dimensional Space:**  
+   - Compute the probability \( p_{ij} \) that point \( i \) is a neighbor of point \( j \):
+     \[
+     p_{ij} = \frac{\exp\left(-\|x_i - x_j\|^2 / 2 \sigma_i^2\right)}{\sum_{k \neq l} \exp\left(-\|x_k - x_l\|^2 / 2 \sigma_k^2\right)}
+     \]
+
+2. **Symmetrize the Affinities:**  
+   \[
+   P_{ij} = \frac{p_{ij} + p_{ji}}{2n}
+   \]
+
+3. **Initialize Low-Dimensional Points:**  
+   Randomly initialize the data in a 2D or 3D space.
+
+4. **Optimize Using Gradient Descent:**  
+   Minimize the **Kullback-Leibler divergence** between the high- and low-dimensional distributions:
+   \[
+   \text{KL}(P || Q) = \sum_{i \neq j} P_{ij} \log \frac{P_{ij}}{Q_{ij}}
+   \]
+   - \( Q_{ij} \) is the probability in the low-dimensional space, computed using a **Student’s t-distribution**.
+
+---
+
+### **Pros and Cons:**
+- **Pros:**  
+  - Excellent for **visualizing high-dimensional data**.  
+  - Preserves **local neighborhood relationships** effectively.
+
+- **Cons:**  
+  - Computationally expensive.  
+  - Sensitive to **hyperparameters** like perplexity and learning rate.
+
+---
+
+### **Use Case:**  
+- **Word Embedding Visualization:**  
+  t-SNE is used to visualize the relationships between different word embeddings, making similar words cluster together.
+
+---
+
+These detailed explanations cover PCA, LDA, SVD, and t-SNE, highlighting their mathematical foundations, practical implementations, and common use cases.
+
 
 ## **4.5 Uniform Manifold Approximation and Projection (UMAP)**
 
