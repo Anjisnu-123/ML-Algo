@@ -17,7 +17,7 @@ singular value decomposistion : Defination,assumption,mathematical formulation,h
 Alternative least sq method : Defination,Assumptions,Mathematical formulation: 1,objective function,2.alternating optimization,closed form solution,How to use,when to use,pros and cons,
 usecase,complexity,real world challlenges,software implementation,variants and extensions,limitations in real world apllications
 
-content based filtering : 
+content based filtering : Defination,Assumptions,mathematical formulation and explanation,item profile,user profie,similarity calculation,update rule,when to use,pros and cons,use cases,mathematical example with detialed calc,evaluation metrics,complexity,real world challeneges,code,varriants and extension,challenges and limitations
 
 ---
 
