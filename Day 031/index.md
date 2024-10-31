@@ -23,3 +23,28 @@ content based filtering : Defination,Assumptions,mathematical formulation and ex
 
 ## Graph based
 ----
+
+Defination,Need for graph based learning,Graph representation : Nodes,edges,edge weight,directed vs undirected graph,Graph learning tasks: node classififcation,link prediction,graph clustering,graph prediction|,Types of graph based learning algorithm:Traditional algorithms,graph neural networks,graph representation learning. Industry use cases of graph based learning : social networks,Recomendation systems,molecular biology,fraud detection in financial networks,web search and ranking,knowledge graph,Traffic and transportation networks,supply chain optimization,evaluation metrics used in graph based learning-old accuracy,precision,recakl,f1,ruc-auc,avg shortest path length,Modularity,clustering coefficient,node degree distribution,betweenness centrality(Node importance)
+
+
+
+Graph based learning techniques:  comunity detection in graph : (louvain method,girvan newman algorithm),page rank algorithm(for link analysis)
+
+overview of community detection in graph : Introduction? why community detection,Louvain method : defination,assumptions,mathematical formulation,how to use where to use,when to use,pros and cons,usecase,Demo problem solved using louvain method,intution/visualization,comparison,evaluation metrics.complexity,rloeal world challenges,software implementation,variants and extension,Limitations in real world application
+
+
+Girvan - newman algorithm : Defination,assumptions,Mathematical formulation,how to use,when to use,pros and cons,usecase,real world example,
+example calculation of girvan newman algrithm,intution/visualization,comparison,evaluation metrics,complexity,real world hallenegs,software implementation,variants and extension,limitation in real world application
+
+Pagerank algorithm : Defination,assumptions,Mathematical formulation,how to use,when to use,pros and cons,usecase,problem statement,intution/visualixation,comparison,evaluation metrics,complexity,real world challange,code implement,variants and extension,limitation in real world application
+
+---
+
+## Blind signal separation
+---
+Defination,Need of blind signal separation : Multichanel signal processing,Noise reduction ,Data analysis,key concept of BSS,Independence,non gausicanity,unsupervised learning,Industy use cases of blind signal separation: Tele communication,audio processing,biomedical engineering,remote sensing,Image processing,finance.
+
+Evaluation metric for blind signal separation: SNR,kld,correlation coefficient,MAE,EVR,cumulative explained variance,reconstruction error,mean squared error,principal component corelation
+
+Bilind signal separation techniques : ICA,PCA
+**ICA :** Defination,assumptions: Statistical independence,non gausianity,Linear mixing,number of sources|,mathematical formulation,how to use,when to use,pros and cons,usecase,Example calc,intution/visualization,comparison,evaluation metrics,complexity,real world challenegs,code implementation,varinats and extension,limitations in real world applications
